@@ -1,0 +1,235 @@
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<style>
+  body {
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+.Home {
+display: block;
+
+}
+
+.Home-wrapper {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+.Side-left {
+background-color: #ff5500;
+height: 100%;
+left: -100%;
+overflow: hidden;
+position: absolute;
+top: 0;
+transform: skew(-45deg);
+width: 150%;
+z-index: 5;
+}
+.Side-left-wrapper {
+width: 100%;
+height: 100%;
+}
+.Side-left-image {
+background:url(http://twin-dev.net/experiments/codevember/diagonal-homepage/img/office-day.svg) center no-repeat transparent;
+height: 100%;
+left: 50%;
+position: absolute;
+top: 0;
+transform: skew(45deg);
+width: 100%;
+}
+
+.Side-right {
+width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: 	#FFB6C1;
+}
+.Side-right-image {
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background: url(http://twin-dev.net/experiments/codevember/diagonal-homepage/img/office-night.svg) center no-repeat transparent;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.Side-left {
+top: -65%;
+left: 0;
+transform: skewY(-35deg);
+width: 100%;
+}
+.Side-left-image {
+background-size: 65%;
+left: 0;
+top: 50%;
+transform: skewY(35deg);
+}
+
+.Side-right-image {
+top: -15%;
+background-size: 65%;
+}
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: ;
+  overflow: hidden;
+  background-color: #333;
+  text-align: left;
+  height: 10%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 190%;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
+
+
+
+<div class="Home">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Testy</a></li>
+    <li><a href="#contact">Testy</a></li>
+    <li><a href="#about">Testy</a></li>
+  </ul>
+
+</div class="Home-wrapper js-Home-desktop-wrapper">
+
+<section class="Side-left js-Side-left">
+ 
+<div class="Side-left-wrapper">
+  <div class="Side-left-image js-Side-left-image"></div>
+</div>
+</section>
+
+<section class="Side-right">
+  <div class="row">
+    <div class="column">
+      <div class="card">..</div>
+    </div>
+    <div class="column">
+      <div class="card">..</div>
+    </div>
+
+  </div>
+<div class="Side-right-image js-Side-right-image"></div>
+</section>
+
+
+
+
